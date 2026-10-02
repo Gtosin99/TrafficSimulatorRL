@@ -1,0 +1,54 @@
+<routes>
+
+    <!-- Vehicle type -->
+    <vType
+        id="car"
+        accel="2.6"
+        decel="4.5"
+        sigma="0.5"
+        length="5"
+        minGap="2.5"
+        maxSpeed="13.89"
+        guiShape="passenger"
+    />
+
+    <!-- Routes through the intersection -->
+
+    <route id="north_south" edges="north_to_center center_to_south"/>
+    <route id="south_north" edges="south_to_center center_to_north"/>
+
+    <route id="east_west" edges="east_to_center center_to_west"/>
+    <route id="west_east" edges="west_to_center center_to_east"/>
+
+
+    <!-- Vehicles -->
+
+    <vehicle
+        id="NS_0"
+        type="car"
+        route="north_south"
+        depart="0"
+    />
+
+    <vehicle
+        id="SN_0"
+        type="car"
+        route="south_north"
+        depart="5"
+    />
+
+    <vehicle
+        id="EW_0"
+        type="car"
+        route="east_west"
+        depart="10"
+    />
+
+    <vehicle
+        id="WE_0"
+        type="car"
+        route="west_east"
+        depart="15"
+    />
+
+</routes>
